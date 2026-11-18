@@ -1,4 +1,6 @@
 import {StyleSheet, Text, View, ScrollView, FlatList, TouchableOpacity} from 'react-native';
+import AppAlt from "./App_Alt";
+
 
 const datasource = [
     {key: 'a'},
@@ -38,7 +40,7 @@ const renderItem = ({item}) => {
 }
 
 
-export default function App() {
+function App() {
   return (
     <View style={styles.container}>
       <FlatList data={datasource} renderItem={renderItem} />
@@ -64,3 +66,5 @@ const styles = StyleSheet.create({
     textAlign: 'left'
   }
 });
+
+export default AppAlt;
